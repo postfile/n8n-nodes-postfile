@@ -1,6 +1,6 @@
 {
   "name": "n8n-nodes-postfile",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "description": "n8n community node for PostFile. Upload files and get public URLs instantly.",
   "keywords": [
     "n8n-community-node-package",
@@ -36,7 +36,8 @@
     "prepublishOnly": "npm run build"
   },
   "files": [
-    "dist"
+    "dist",
+    "index.js"
   ],
   "devDependencies": {
     "n8n-workflow": "^2.13.1",
