@@ -38,7 +38,13 @@ export class PostFile implements INodeType {
 		defaults: {
 			name: 'PostFile',
 		},
-		usableAsTool: true,
+		usableAsTool: {
+			replacements: {
+				displayName: 'PostFile Tool',
+				description:
+					'Upload files to PostFile, list uploaded files, retrieve file details, or delete files by ID. Use this tool when an AI Agent needs to create or manage public file URLs.',
+			},
+		},
 		inputs: [NodeConnectionTypes.Main],
 		outputs: [NodeConnectionTypes.Main],
 		credentials: [
