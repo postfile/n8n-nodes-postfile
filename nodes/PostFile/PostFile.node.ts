@@ -5,6 +5,7 @@ import {
 	INodeTypeDescription,
 	JsonObject,
 	NodeApiError,
+	NodeConnectionTypes,
 } from 'n8n-workflow';
 
 const LARGE_UPLOAD_THRESHOLD_BYTES = 100 * 1024 * 1024;
@@ -44,8 +45,8 @@ export class PostFile implements INodeType {
 					'Upload files to PostFile, list uploaded files, retrieve file details, or delete files by ID. Use this tool when an AI Agent needs to create or manage public file URLs.',
 			},
 		},
-		inputs: ['main'],
-		outputs: ['main'],
+		inputs: [NodeConnectionTypes.Main],
+		outputs: [NodeConnectionTypes.Main],
 		credentials: [
 			{
 				name: 'postFileApi',
