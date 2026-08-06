@@ -28,5 +28,8 @@ jobs:
       - name: Build
         run: npm run build
 
+      - name: n8n community node lint
+        run: npx @n8n/node-cli@latest lint
+
       - name: Publish to npm with provenance
         run: npm publish --provenance --access public
