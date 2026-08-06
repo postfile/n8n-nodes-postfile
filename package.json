@@ -41,9 +41,9 @@
     "index.js"
   ],
   "devDependencies": {
-    "@n8n/eslint-plugin-community-nodes": "^0.28.0",
-    "@typescript-eslint/parser": "^8.66.0",
-    "eslint": "^9.39.5",
+    "@n8n/eslint-plugin-community-nodes": "0.28.0",
+    "@typescript-eslint/parser": "^8.35.0",
+    "eslint": "9.29.0",
     "n8n-workflow": "^2.13.1",
     "typescript": "~5.3.0"
   },
